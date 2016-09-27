@@ -1,0 +1,46 @@
+body {
+  color: #555;
+}
+
+.bg {
+  background: #ddd;
+}
+
+.container {
+  max-width: 100%;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  min-height: 15em;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-item {
+  align-self: center;
+}
+
+.flex-gallery {
+  padding: 0;
+  list-style: none;
+  
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.gallery-item {
+  margin: 1em;
+  
+}
+
+.fake-image {
+  width: 200px;
+  height: 200px;
+  background: #eee;
+  border: 1px solid #ddd;
+}
