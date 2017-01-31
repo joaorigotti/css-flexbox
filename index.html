@@ -1,34 +1,120 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-us">
+<html dir="ltr" lang="pt">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSS Flexbox</title>
-    
+
     <link rel="stylesheet" media="screen" href="css/normalize.css">
     <link rel="stylesheet" media="screen" href="css/style.css">
   </head>
-  
+
   <body>
     <div class="bg">
-      <div class="container flex-container">
-        <div class="flex-item">
-          <h1>Flexbox</h1>
-          <p>Conteúdo centralizado na horizontal e vertical sem nenhum problema.</p>
-        </div>
+      <div class="container hero">
+        <header>
+          <h1 class="title">Flexbox</h1>
+          <p class="description">Exemplo prático: Lista de produtos mais vendidos em uma homepage de uma loja virtual.</p>
+        </header>
       </div>
     </div>
-    
+
     <div class="container">
-      <ul class="flex-gallery">
-        <li class="gallery-item"><div class="fake-image"></div></li>
-        <li class="gallery-item"><div class="fake-image"></div></li>
-        <li class="gallery-item"><div class="fake-image"></div></li>
-        <li class="gallery-item"><div class="fake-image"></div></li>
-        <li class="gallery-item"><div class="fake-image"></div></li>
-        <li class="gallery-item"><div class="fake-image"></div></li>
-        <li class="gallery-item"><div class="fake-image"></div></li>
+      <ul class="featured-products">
+        <li class="featured-item">
+          <div class="product-card">
+            <div class="card-header">
+              <a href="#">
+                <img class="product-hero" src="./img/smartwheel.jpg" alt="">
+              </a>
+
+              <h2 class="product-title">Smartwheel</h2>
+            </div>
+
+            <div class="card-body">
+              <p class="description">
+                Patinete elétrico que se movimenta de acordo com os movimentos dos seus pés.
+              </p>
+
+              <p class="price">
+                R$ <span class="value">1.500,00</span>
+              </p>
+
+              <p class="payment-plan">
+                10x de 150,00 sem juros
+              </p>
+            </div>
+
+            <div class="card-footer">
+              <a class="button" href="#">Detalhes</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="featured-item">
+          <div class="product-card">
+            <div class="card-header">
+              <a href="#">
+                <img class="product-hero" src="./img/smartwheel.jpg" alt="">
+              </a>
+
+              <h2 class="product-title">Playstation 4</h2>
+            </div>
+
+            <div class="card-body">
+              <p class="description">
+                Patinete elétrico que se movimenta de acordo com os movimentos dos seus pés.
+              </p>
+
+              <p class="price">
+                R$ <span class="value">1.800,00</span>
+              </p>
+
+              <p class="payment-plan">
+                10x de 180,00 sem juros
+              </p>
+            </div>
+
+            <div class="card-footer">
+              <a class="button" href="#">Detalhes</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="featured-item">
+          <div class="product-card">
+            <div class="card-header">
+              <a href="#">
+                <img class="product-hero" src="./img/smartwheel.jpg" alt="">
+              </a>
+
+              <h2 class="product-title">Robô aspirador Deebot D45</h2>
+            </div>
+
+            <div class="card-body">
+              <p class="description">
+                Patinete elétrico que se movimenta de acordo com os movimentos dos seus pés.
+              </p>
+
+              <p class="price">
+                R$ <span class="value">1.000,00</span>
+              </p>
+
+              <p class="payment-plan">
+                10x de 100,00 sem juros
+              </p>
+            </div>
+
+            <div class="card-footer">
+              <a class="button" href="#">Detalhes</a>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
+
+    <footer class="footer container">
+      <small>Praticando flexbox</small>
+    </footer>
   </body>
 </html>
