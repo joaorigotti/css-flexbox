@@ -19,9 +19,6 @@ body {
 .hero {
   color: #fff;
   min-height: 12em;
-
-  display: flex;
-  align-items: center;
 }
 
 .title {
@@ -45,10 +42,6 @@ body {
 .featured-products {
   list-style: none;
   padding: 0;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .featured-products::after {
@@ -59,21 +52,20 @@ body {
 .featured-item {
   width: 30.3030%;
   margin: 2.8em 0;
-
-  display: flex;
 }
 
 .product-card {
   width: 100%;
   box-sizing: border-box;
-  box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px #eee;
   border-top: 2px solid #2962ff;
   border-radius: 2px;
   padding: 0.625em;
+  transition: all 0.3s ease-in-out;
+}
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.product-card:hover {
+  box-shadow: 0 0 15px #ddd;
 }
 
  .product-card .product-hero {
@@ -123,6 +115,7 @@ body {
   border-bottom: 4px solid #2962ff;
   padding: 0.6em 2.2em;
   margin: 0 auto;
+  transition: all 0.2s ease-in;
 }
 
 .button:hover {

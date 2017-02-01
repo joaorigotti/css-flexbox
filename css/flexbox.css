@@ -1,0 +1,28 @@
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.featured-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*
+  Mantém os cards alinhados à esquerda, caso alguma 'linha' possua menos de 3 produtos
+*/
+.featured-products::after {
+  content: '';
+  width: 30.3030%;
+}
+
+.featured-item {
+  display: flex;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
